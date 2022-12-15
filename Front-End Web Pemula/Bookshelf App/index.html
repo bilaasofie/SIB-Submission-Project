@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booshelf App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Bookshelf App</h1>
+</header>
+
+<div class="wrapper">
+  <section class="container bg-white shadow" >
+    <h2 class="container-header text-center">Masukkan buku baru</h2>
+    <form class="inputBook" action="#" id="inputBook">
+      <div class="form-group form-title">
+        <label for="inputBookTitle">Judul</label>
+        <input type="text" id="inputBookTitle" name="title" required>
+      </div>
+      <div class="form-group form-title">
+        <label for="inputBookAuthor">Penulis</label>
+        <input type="text" id="inputBookAuthor" name="author" required>
+      </div>
+      <div class="form-group form-title">
+        <label for="inputBookYear">Tahun</label>
+        <input type="number" id="inputBookYear" name="year" required>
+      </div>
+      <div class="input_inline">
+        <label for="inputBookIsComplete">Selesai dibaca</label>
+        <input id="inputBookIsComplete" type="checkbox">
+      </div>
+      <input type="submit" value="Masukkan buku ke rak" name="Submit" class="btn-submit">
+    </form>
+  </section>
+  
+  <section class="container bg-white shadow">
+    <h2 class="container-header">Cari Buku</h2>
+    <form id="searchBook">
+      <label for="searchBookTitle">Judul</label>
+      <input id="searchBookTitle" type="text">
+      <input type="submit" value="Cari buku" name="Submit" class="btn-submit">
+    </form>
+  </section>
+
+  <section class="container">
+    <h2 class="container-header">Belum selesai dibaca</h2>
+    <div class="list-item" id="incompleteBookshelfList">
+      <h3>Book Title</h3> 
+      <p>Penulis</p>
+      <p>Tahun</p>
+    </div>
+    </article>
+  </section>
+  
+  <section class="container">
+    <h2 class="container-header">Sudah selesai dibaca</h2>
+    <div class="list-item" id="completeBookshelfList">
+      <h3>Book Title</h3> 
+      <p>Penulis</p>
+      <p>Tahun</p>
+    </div>
+  </section>
+</div>
+<footer>
+  <p>Bookshelf &#169; 2022. Front-End Pemula</p>
+</footer>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
